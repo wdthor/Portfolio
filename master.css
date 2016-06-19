@@ -1,8 +1,53 @@
-	.anim
-	{
-		-moz-animation:anim 1s ease-out;
-		-webkit-animation:anim 1s ease-out;
-	}
+.animHtml
+{
+	-moz-animation:animHtml 1s ease-out;
+	-webkit-animation:animHtml 1s ease-out;
+}
 
-@-moz-keyframes anim 	  {0%  { width:0px;} 100%{ width:80%;}  }
-@-webkit-keyframes anim   {0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes animHtml 	  {0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes animHtml   {0%  { width:0px;} 100%{ width:80%;}  }
+
+.animBootstrap
+{
+	-moz-animation:animBootstrap 1s ease-out;
+	-webkit-animation:animBootstrap 1s ease-out;
+}
+
+@-moz-keyframes animBootstrap 	  {0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes animBootstrap   {0%  { width:0px;} 100%{ width:70%;}  }
+
+.animJQuery
+{
+	-moz-animation:animJQuery 1s ease-out;
+	-webkit-animation:animJQuery 1s ease-out;
+}
+
+@-moz-keyframes animJQuery 	  {0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes animJQuery   {0%  { width:0px;} 100%{ width:50%;}  }
+
+.animPhp
+{
+	-moz-animation:animPhp 1s ease-out;
+	-webkit-animation:animPhp 1s ease-out;
+}
+
+@-moz-keyframes animPhp 	  {0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes animPhp   {0%  { width:0px;} 100%{ width:60%;}  }
+
+.animMysql
+{
+	-moz-animation:animMysql 1s ease-out;
+	-webkit-animation:animMysql 1s ease-out;
+}
+
+@-moz-keyframes animMysql 	  {0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes animMysql   {0%  { width:0px;} 100%{ width:60%;}  }
+
+.animGit
+{
+	-moz-animation:animGit 1s ease-out;
+	-webkit-animation:animGit 1s ease-out;
+}
+
+@-moz-keyframes animGit 	  {0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes animGit   {0%  { width:0px;} 100%{ width:60%;}  }
