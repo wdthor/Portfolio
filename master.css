@@ -1,0 +1,8 @@
+	.anim
+	{
+		-moz-animation:anim 1s ease-out;
+		-webkit-animation:anim 1s ease-out;
+	}
+
+@-moz-keyframes anim 	  {0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes anim   {0%  { width:0px;} 100%{ width:80%;}  }
