@@ -6,18 +6,23 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quattrocento+Sans" rel="stylesheet">
 
 	<style>
 
 	body
     {
         background-color: #f9c667;
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Quattrocento Sans', cursive;
         font-size: 2em;
     }
 
-    .title
+    nav, .title
+    {
+    	font-family: 'Kaushan Script', cursive;
+    }
+
+    .brandName
     {
         font-size: 1.3em;
     }
@@ -47,16 +52,26 @@
 
 	.imgKwoon
 	{
-		width: 90%;
+		height: 300px;
+		/*height: 305px;*/
 		border: 1px solid gray;
 		border-radius: 10px;
-
 	}
 
-	/*.colPortfolio
+	.comingSoon:hover
 	{
-		border: 1px solid red;
-	}*/
+		color:blue;
+	}
+
+	.imgKwoon:hover
+	{
+		border-color:white;
+	}
+
+	.colPortfolio
+	{
+		margin: 10px 0;
+	}
 
 	figcaption
 	{
@@ -72,7 +87,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand title" href="#">Thierry</a>
+				<a class="navbar-brand brandName" href="#">Thierry</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="">
@@ -93,7 +108,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-offset-1 col-md-11 col-xs-12">
-				<h2>Portfolio</h2>
+				<h2 class="title">Portfolio</h2>
 			</div>
 		</div>
 	</div>
@@ -102,57 +117,99 @@
 
 	<div class="container">
 		
-		<h3 style="margin-top:-10px;">Responsive Websites</h3>	
+		<h3 style="margin-top:-10px;"><strong>Responsive Websites & Personal Projects</strong></h3>
 			
 	</div>
 	<div class="container-fluid">
-		<div class="row">
-			
+		<div class="row">			
 			<div class="col-md-4 col-sm-6 colPortfolio text-center">
 				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
+					<img class="imgKwoon" src="kwoonIntegration.png" data-toggle="modal" data-target="#project1" data-backdrop="true">
+					<figcaption><strong>Front-End Project</strong></figcaption>
 				</figure>
 			</div>
 
 			<div class="col-md-4 col-sm-6 colPortfolio text-center">
 				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
+					<img class="imgKwoon" src="tributePage.jpg" data-toggle="modal" data-target="#project2" data-backdrop="true">
+					<figcaption><strong>Tribute Page</strong></figcaption>
 				</figure>
+			</div>
+			<div class="clearfix visible-sm-block"></div>
+
+			<div class="col-md-4 col-sm-6 colPortfolio text-center">
+				<div style="padding-top: 15%; padding-bottom: 20%">
+					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
+				</div>
+			</div>
+			<div class="clearfix visible-lg-block visible-md-block"></div>
+
+			<div class="col-md-4 col-sm-6 colPortfolio text-center">
+				<div style="padding-top: 15%; padding-bottom: 20%">
+					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
+				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
-				</figure>
+				<div style="padding-top: 15%; padding-bottom: 20%">
+					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
+				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
-				</figure>
+				<div style="padding-top: 15%; padding-bottom: 20%">
+				<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
 			</div>
-
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
-				</figure>
-			</div>
-
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgKwoon" src="kwoonIntegration.png">
-					<figcaption>Projet Integration<figcaption/>
-				</figure>
-			</div>
-
-		</div>
-		
+		</div>		
 	</div>
+
+	<!-- Modal1 -->
+	<div class="modal fade" id="project1" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content" style="background-color:Azure ;">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title"><strong>Front-End Project</strong></h4>
+	        </div>
+	        <div class="modal-body">
+	          <a href="https://github.com/webdevthierry/Projet-Integration"><img  style="float: left;" class="imgKwoon" src="kwoonIntegration.png"></a>
+	          <p style="float: left;margin-left: 10px;">Webpages creation from images
+	          <br> Use of Html5, Css3 & Bootstrap
+	          <br><br><strong>Features:</strong>
+	          <br>Sliders, Icons, Scrollspy</p>
+	          <p style="clear: both">Click on the image to see the code source</p>
+	        </div>
+	        <div class="modal-footer" style="clear: both;">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+ 	</div>
+
+ 	<!-- Modal2 -->
+	<div class="modal fade" id="project2" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content" style="background-color:Azure ;">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title"><strong>Tribute Page</strong></h4>
+	        </div>
+	        <div class="modal-body">
+	          <a href="https://codepen.io/webdevthierry/full/mPWMEr"><img  style="float: left;" class="imgKwoon" src="tributePage.jpg"></a>
+	          <p style="float: left;margin-left: 10px;">Tribute to the martial arts legend
+	          <br> Use of Html5, Css3 & Bootstrap</p>
+	          <p style="clear: both">Click on the image to see the codepen</p>
+	        </div>
+	        <div class="modal-footer" style="clear: both;">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+ 	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
