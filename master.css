@@ -1,3 +1,32 @@
+body
+{
+    background-color: #f9c667;
+    font-family: 'Quattrocento Sans', cursive;
+    font-size: 2em;
+}
+
+nav, .title
+{
+	font-family: 'Kaushan Script', cursive;
+}
+
+.title
+{
+	margin: 5px auto;
+}
+
+.brandName
+{
+    font-size: 1.3em;
+}
+
+.titleBorder
+{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+
 .animHtml
 {
 	-moz-animation:animHtml 1s ease-out;
