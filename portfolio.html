@@ -4,6 +4,7 @@
 <head>
 	<title>Portfolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quattrocento+Sans" rel="stylesheet">
@@ -13,7 +14,8 @@
 
 	.imgKwoon
 	{
-		height: 300px;
+		max-height: 300px;
+		max-width: 100%;
 		/*height: 305px;*/
 		border: 1px solid gray;
 		border-radius: 10px;
@@ -33,7 +35,7 @@
 	{
 		margin: 10px 0;
 	}
-
+	
 	figcaption
 	{
 		margin-top: 10px;
@@ -133,7 +135,7 @@
 	          <a href="https://github.com/webdevthierry/Projet-Integration"><img  style="float: left;" class="imgKwoon" src="kwoonIntegration.png"></a>
 	          <p style="float: left;margin-left: 10px;">Webpages creation from images
 	          <br> Use of Html5, Css3 & Bootstrap
-	          <br><br><strong>Features:</strong>
+	          <br><strong>Features:</strong>
 	          <br>Sliders, Icons, Scrollspy</p>
 	          <p style="clear: both">Click on the image to see the code source</p>
 	        </div>
@@ -155,10 +157,24 @@
 	          <h4 class="modal-title"><strong>Tribute Page</strong></h4>
 	        </div>
 	        <div class="modal-body">
-	          <a href="https://codepen.io/webdevthierry/full/mPWMEr"><img  style="float: left;" class="imgKwoon" src="tributePage.jpg"></a>
-	          <p style="float: left;margin-left: 10px;">Tribute to the martial arts legend
+	       	
+	       		<div class="col-md-4">
+	       			 <figure>
+	            <a href="https://codepen.io/webdevthierry/full/mPWMEr">
+					 <img class="imgKwoon" src="tributePage.jpg">
+					</a>
+					<figcaption style="text-align:text-center"><strong>Click on the image to see the codepen</strong></figcaption>
+				</figure>
+	       		</div>
+
+	         
+	       		<div class="col-md-8">
+	       			<p>Tribute to the martial arts legend
 	          <br> Use of Html5, Css3 & Bootstrap</p>
-	          <p style="clear: both">Click on the image to see the codepen</p>
+	       		</div>
+
+	          
+	         
 	        </div>
 	        <div class="modal-footer" style="clear: both;">
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
