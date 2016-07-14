@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quattrocento+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="master.css">
 
@@ -14,13 +15,41 @@
 
 	.iphone
 	{
-		width: 15%;
+		position: absolute;
+		right: 28%;
+		top: 180px;
+		min-width: 50px;
+		width: 16%;
+		z-index: 2;
+	}
+	
+	.portfolioIphone
+	{
+		position: absolute;
+		right: 28.7%;
+		top: 214px;
+		min-width: 80px;
+		width: 14%;
+		z-index: 2;
 	}
 
-	.ipad
+	.portfolioTablet
 	{
-		width: 20%;
+		position: absolute;
+		right: 14%;
+		top: 100px;
+		min-width: 200px;
+		width: 22%;
 	}
+
+	
+	.text, .text1, .text2, .text3
+	{
+		font-size: 1.2em;
+	}
+
+
+
 
 	</style>
 
@@ -56,18 +85,43 @@
 	<div class="container-fluid">
 		<div class="row titleBorder">
 			<div class="col-sm-offset-1 col-xs-11">
-				<h3 class="title">Create an awesome website</h3>
+				<h2 class="title">Create awesome websites</h2>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
+			<div style="height: 20px"></div>
+
 			<div class="col-sm-offset-1 col-xs-11">
-				<img src="smartphone.png" class="iphone">
-				<img src="ipad.png" class="ipad">
+			<p class="text">Create websites that are:</p>
+			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Up-to-date</p>
+			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Responsive (smartphone, tablet,...)</p>
+			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> And of course awesome!</p>
+				<img src="smartphone.png" class="iphone hidden-xs hidden-sm">
+				<img src="portfolioIphone.png" class="portfolioIphone hidden-xs hidden-sm">
+				<img src="portfolioTablet2.png" class="portfolioTablet hidden-xs hidden-sm">
 			</div>
 		</div>
 	</div>
+
+	<nav class="copyright navbar-fixed-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
+			</div>
+			<div class="col-xs-6" style="text-align:right;">
+				<ul class="list-inline">
+					<li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+					<li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+					<li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
+				</ul>
+			</div>
+		</div>
+			
+	</div>
+	</nav>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

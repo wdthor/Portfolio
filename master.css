@@ -32,6 +32,38 @@ nav, .title
 	border-bottom: 2px solid black;
 }
 
+.copyright
+{
+	background: white;
+	padding-top: 25px;
+	font-size: 0.7em;
+}
+
+#github
+{
+	color: black;
+}
+
+#github:hover
+{
+	color: #666;
+}
+
+#viadeo
+{
+	color: orange;
+}
+
+#viadeo:hover
+{
+	color: darkorange;
+}
+
+
+.navBottom
+{
+	font-size: 1em;
+}
 
 .animHtml
 {
@@ -97,7 +129,7 @@ nav, .title
 @-moz-keyframes title 	  {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 @-webkit-keyframes title   {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 
-.imgKwoon, .animSkill, .ipad, .iphone
+.imgKwoon, .animSkill, .portfolioTablet, .iphone, .text2
 {
 	-moz-animation:animImg 1s linear;
 	-webkit-animation:animImg 1s linear;
