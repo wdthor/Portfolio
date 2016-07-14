@@ -34,7 +34,7 @@
 
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
@@ -75,23 +75,25 @@
 
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-6">
-				<form class="form-group input-group">
-					<label class="input-group-addon btn-info iconPad" for="name">
-						<i class="fa fa-user"></i>
-					</label>
-					<input type="text" class="form-control" id="name" placeholder="Name">
-				</form>
+				<form method="GET"	action="contact.php">
+					<div class="form-group input-group">
+						<label class="input-group-addon btn-info iconPad" for="name">
+							<i class="fa fa-user"></i>
+						</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+					</div>
 						
-				<form class="form-group input-group">
-					<label class="input-group-addon btn-info" for="email">
-						<i class="fa fa-envelope"></i>
-					</label>
-					<input type="text" class="form-control" id="email" placeholder="Email">
-				</form>
+					<div class="form-group input-group">
+						<label class="input-group-addon btn-info" for="email">
+							<i class="fa fa-envelope"></i>
+						</label>
+						<input type="email" class="form-control" name="mail" id="email" placeholder="Email" required>
+					</div>
 						
-				<textarea class="form-group form-control" rows="4" placeholder="Your message"></textarea>
+				<textarea class="form-group form-control" name="message" rows="4" placeholder="Your message" required></textarea>
 
 				<input class="btn btn-primary btn-block" type="submit" value="SUBMIT">
+				</form>
 			</div>
 		</div>
 	</div>

@@ -12,21 +12,69 @@
 
 	<style>
 
+#navbarBg
+{
+	background-color: red;
+}
+
+button .barColor
+{
+	background-color: white !important;
+}
+
+tr:hover
+{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+th, td
+{
+	text-align: center;
+	padding:5px 10px;
+}
+
+.link:link
+{
+	color: #447;
+}
+
+.link:visited
+{
+	color: #447;
+}
+
+ul li img
+{
+	height: 30px;
+}
+
+.medals
+{
+	height: 150px;
+}
+
+tr td img
+{
+	width:150px;
+}
+
+
 
 	</style>
+
 
 </head>
 
 <body>
-
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+				<button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
+			        <span class="barColor icon-bar"></span>
+			        <span class="barColor icon-bar"></span>
+			        <span class="barColor icon-bar"></span>
 		      	</button>
 				<a class="navbar-brand brandName" href="#">Thierry</a>
 			</div>
@@ -51,37 +99,131 @@
 		</div>
 	</div>
 
-	<div class="container-fluid" style="background-color: silver; height: 150px">
+	<div class="container-fluid" style="background-color: #F8F8F8; margin-top: 25px; margin-bottom: 25px">
 		<div class="row">
-			<div class="col-md-offset-1 col-md-9">
-				<p>Web Developer Full-Stack <br> fjsljfq <br></p>
+			<div class="col-sm-offset-1 col-sm-9 intro" style="margin-top: 25px; margin-bottom: 25px">
+				<p class="">Web Developer Full-Stack for about a year. I like learning new things and getting better everyday.</p>
+				<p>I am known for my punctuality and for being a hard-working person.</p>
 			</div>
-				<img style="float:right; margin-right: 50px; border-radius: 100%; width: 5em;
+			<div class="col-sm-2">
+				<img class="profile" style="display:block; margin: 10px auto; border-radius: 50%; width: 5em;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="photo2.jpg">
-			
+			</div>
 		</div>
 	</div>
+	<div style="height: 20px;"></div>
 
 	<div class="container">
-		
-	  <ul class="nav nav-tabs collapse navbar-collapse">
+		<div class="row">
+			<div class="col-sm-12 col-xs-6">
+	  <ul class="nav nav-tabs">
 	    <li class="active"><a data-toggle="tab" href="#home">Experience</a></li>
 	    <li><a data-toggle="tab" href="#menu1">Education</a></li>
 	    <li><a data-toggle="tab" href="#menu2">Hobbies</a></li>
 	  </ul>
-
+	  </div>
+	  	</div>
 	  <div class="tab-content">
 	    <div id="home" class="tab-pane fade in active">
 	      <h3>Experience</h3>
-	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <div class="table-responsive">
+		      <table class="animTable">
+		     	<tr>
+		     		<th>2016</th>
+		    		<th>
+		   			 Web Developer 
+		      		</th>
+		      		<td class="collapse navbar-collapse">
+		      		<img src="resolving.png">
+		      		</td>
+		      		<td>
+		      			Development of an app which takes information from a database based on id, status, states,... to a PDF for <strong><a class="link" target="_blank" href="http://resolving.com">Resolving</a></strong> 
+		      		</td>
+		    	</tr>
+		    	<tr>
+		     		<th>2014</th>
+		    		<th>
+		   			 Web Developer PHP 
+		      		</th>
+		      		<td class="collapse navbar-collapse">
+		      			<img src="starfleetGroup.jpg">
+		      		</td>
+		      		<td>
+		      			Development of the Japanese website <a class="link" target="_blank" href="https://www.ecofa.jp">www.ecofa.jp</a> which is a e-commerce of recycled products for <strong><a class="link" target="_blank" href="http://www.starfleet.co.jp">Starfleet Group</a></strong> 
+		      		</td>
+		    	</tr>
+		    	<tr>
+		     		<th>2013</th>
+		    		<th>
+		   			 Data Operators Manager 
+		      		</th>
+		      		<td class="collapse navbar-collapse">
+		      			<img src="aitySolutions.jpg">
+		      		</td>
+		      		<td>
+		      			Involved in the writing of the online guide <a class="link" target="_blank" href="http://www.overcambodia.com/en">www.overcambodia.com</a> for <strong><a class="link" target="_blank" href="http://aitysolutions.com">Aity Solutions</a></strong> 
+		      		</td>
+		    	</tr>
+		      </table>
+	      </div>
 	    </div>
 	    <div id="menu1" class="tab-pane fade">
 	      <h3>Education</h3>
-	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	      <div class="table-responsive">
+	      <table>
+	     	<tr>
+	     		<th>2016</th>
+	    		<th>
+	   			 It Akademy 
+	      		</th>
+	      		<td>Web and Mobile Apps Developer</td>
+	      		
+	    	</tr>
+	    	<tr>
+	     		<th>2014</th>
+	    		<th>
+	   			 Setec Institute 
+	      		</th>
+	      		<td>
+	      			Bachelor's Degree of Management Information System
+	      		</td>
+	    	</tr>
+	    	<tr>
+	     		<th>2014</th>
+	    		<th>
+	   			 University of Cambodia 
+	      		</th>
+	      		<td>
+	      			Bachelor's Degree of English Literature 
+	      		</td>
+	    	</tr>
+	      </table>
+	      </div>
 	    </div>
 	    <div id="menu2" class="tab-pane fade">
 	      <h3>Hobbies</h3>
-	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	      <ul>
+	      	<li>Martial Arts</li>
+	      		<ul>
+	      			<li>Kung-Fu Wushu
+	      			<br>
+	      			<img src="blueBelt.png">
+	      				<ul>
+	      					<li>
+				      			
+				      			<p>3rd in the French Cup in 2004</p>
+
+			      			</li>
+			      			<img class="medals" src="medals.jpg">
+		      			</ul>
+	      			</li>
+					
+	      			<li>Taekwondo
+	      			<br>
+	      				<img src="blueBelt.png">
+	      			</li>
+	      		</ul>
+	      </ul>
 	    </div>
 	  </div>
 	</div>

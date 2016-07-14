@@ -3,6 +3,12 @@ body
     background-color: #f9c667;
     font-family: 'Quattrocento Sans', cursive;
     font-size: 2em;
+    padding-top: 70px;
+}
+
+body[aria-expanded="true"]
+{
+	padding-top: 280px;
 }
 
 nav, .title
@@ -80,3 +86,31 @@ nav, .title
 
 @-moz-keyframes animGit 	  {0%  { width:0px;} 100%{ width:60%;}  }
 @-webkit-keyframes animGit   {0%  { width:0px;} 100%{ width:60%;}  }
+
+
+.title
+{
+	-moz-animation:title 1s ease-out;
+	-webkit-animation:title 1s ease-out;
+}
+
+@-moz-keyframes title 	  {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
+@-webkit-keyframes title   {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
+
+.imgKwoon, .animSkill, .ipad, .iphone
+{
+	-moz-animation:animImg 1s linear;
+	-webkit-animation:animImg 1s linear;
+}
+
+@-moz-keyframes animImg 	  {0%  { opacity:0;} 100%{ opacity:100%;}  }
+@-webkit-keyframes animImg   {0%  { opacity:0;} 100%{ opacity:100%;}  }
+
+.animTable
+{
+	-moz-animation:animTable 1s linear;
+	-webkit-animation:animTable 1s linear;
+}
+
+@-moz-keyframes animTable 	  {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+@-webkit-keyframes animTable   {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
