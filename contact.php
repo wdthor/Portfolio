@@ -1,5 +1,5 @@
 <?php
-$mail = 'thierry.hor.sd@mail.com';
+$mail = 'thierry.hor.sd@gmail.com';
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // filters servers with bugs.
 {
 	$newLine = "\r\n";
@@ -9,20 +9,20 @@ else
 	$newLine = "\n";
 }
 // messages in text format and HTML.
-$message_txt = htmlentities($_GET['name']). " " .htmlentities($_GET['mail']). " " .htmlentities($_GET['message']);
-$message_html = "<html><head></head><body>" .htmlentities($_GET['name']). "<br><br>" .htmlentities($_GET['mail']). "<br><br>" .htmlentities($_GET['message']). "</body></html>";
+$message_txt = htmlentities($_POST['name']). " " .htmlentities($_POST['mail']). " " .htmlentities($_POST['message']);
+$message_html = "<html><head></head><body>" .htmlentities($_POST['name']). "<br><br>" .htmlentities($_POST['mail']). "<br><br>" .htmlentities($_POST['message']). "</body></html>";
  
 // Create boundary
 $boundary = "-----=".md5(rand());
 //==========
  
 // Subject
-$subject = "Hi!";
+$subject = "Portfolio";
 //=========
  
 // Create email's header
-$header = "From: \"customer\"<customer@mail.com>".$newLine;
-$header.= "Reply-to: \"customer\" <customer@mail.com>".$newLine;
+$header = "From: " .htmlentities($_POST['name']). htmlentities($_POST['mail']) .$newLine;
+$header.= "Reply-to: " .htmlentities($_POST['name']). htmlentities($_POST['mail']) .$newLine;
 $header.= "MIME-Version: 1.0".$newLine;
 $header.= "Content-Type: multipart/alternative;".$newLine." boundary=\"$boundary\"".$newLine;
 //==========

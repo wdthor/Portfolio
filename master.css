@@ -4,6 +4,7 @@ body
     font-family: 'Quattrocento Sans', cursive;
     font-size: 2em;
     padding-top: 70px;
+    padding-bottom: 100px;
 }
 
 body[aria-expanded="true"]
@@ -35,7 +36,7 @@ nav, .title
 .copyright
 {
 	background: white;
-	padding-top: 25px;
+	padding-top: 20px;
 	font-size: 0.7em;
 }
 
@@ -59,6 +60,15 @@ nav, .title
 	color: darkorange;
 }
 
+#navbarBg
+{
+	background-color: red;
+}
+
+button .barColor
+{
+	background-color: white !important;
+}
 
 .navBottom
 {
@@ -129,7 +139,7 @@ nav, .title
 @-moz-keyframes title 	  {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 @-webkit-keyframes title   {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 
-.imgKwoon, .animSkill, .portfolioTablet, .iphone, .text2
+.imgKwoon, .animSkill, .portfolioTablet, .iphone, .text1, .portfolioIphone
 {
 	-moz-animation:animImg 1s linear;
 	-webkit-animation:animImg 1s linear;
@@ -137,6 +147,24 @@ nav, .title
 
 @-moz-keyframes animImg 	  {0%  { opacity:0;} 100%{ opacity:100%;}  }
 @-webkit-keyframes animImg   {0%  { opacity:0;} 100%{ opacity:100%;}  }
+
+.text2
+{
+	-moz-animation:animImg 2s linear;
+	-webkit-animation:animImg 2s linear;
+}
+
+@-moz-keyframes animImg 	  {0%  { opacity:0;} 50%  { opacity:0;} 100%{ opacity:100%;}  }
+@-webkit-keyframes animImg   {0%  { opacity:0;} 50%  { opacity:0;} 100%{ opacity:100%;}  }
+
+.text3
+{
+	-moz-animation:animImg 3s linear;
+	-webkit-animation:animImg 3s linear;
+}
+
+@-moz-keyframes animImg 	  {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
+@-webkit-keyframes animImg   {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
 
 .animTable
 {

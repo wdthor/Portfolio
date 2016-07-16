@@ -41,15 +41,24 @@
 		min-width: 200px;
 		width: 22%;
 	}
+	
+	.flag1, .flag
+	{
+		width: 20px;
+		margin-right: 10px;
+		margin-left: 20px;
+		
+	}
 
+	.flag1
+	{
+		margin-top:-10px;
+	}
 	
 	.text, .text1, .text2, .text3
 	{
 		font-size: 1.2em;
 	}
-
-
-
 
 	</style>
 
@@ -60,22 +69,24 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+			  <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
+		        <span class="barColor icon-bar"></span>
+		        <span class="barColor icon-bar"></span>
+		        <span class="barColor icon-bar"></span>
 		      </button>
-				<a class="navbar-brand brandName" href="#">Thierry</a>
+				<a class="navbar-brand brandName" href="index.html">Thierry</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="home.html">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="skills.html">Skills</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
+						<a href="skills.html"><img class="flag" src="images/frFlag.png"></a><br>
+						<a href="contact.html" disabled><img class="flag1" src="images/EngFlag.png" ></a>
 				</ul>
 			</div>
 
@@ -85,7 +96,7 @@
 	<div class="container-fluid">
 		<div class="row titleBorder">
 			<div class="col-sm-offset-1 col-xs-11">
-				<h2 class="title">Create awesome websites</h2>
+				<h3 class="title">Create awesome websites</h3>
 			</div>
 		</div>
 	</div>
@@ -95,12 +106,11 @@
 
 			<div class="col-sm-offset-1 col-xs-11">
 			<p class="text">Create websites that are:</p>
-			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Up-to-date</p>
-			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Responsive (smartphone, tablet,...)</p>
-			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> And of course awesome!</p>
-				<img src="smartphone.png" class="iphone hidden-xs hidden-sm">
-				<img src="portfolioIphone.png" class="portfolioIphone hidden-xs hidden-sm">
-				<img src="portfolioTablet2.png" class="portfolioTablet hidden-xs hidden-sm">
+			<p class="text1 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Up-to-date</p>
+			<p class="text2 text-primary"><i class="fa fa-check" aria-hidden="true"></i> Responsive <i class="fa fa-mobile" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-desktop" aria-hidden="true"></i></p>
+			<p class="text3 text-primary"><i class="fa fa-check" aria-hidden="true"></i> And of course awesome!</p>
+				<img src="images/portfolioIphone.png" class="iphone hidden-xs hidden-sm">
+				<img src="images/portfolioTablet.png" class="portfolioTablet hidden-xs hidden-sm">
 			</div>
 		</div>
 	</div>
