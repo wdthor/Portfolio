@@ -21,8 +21,8 @@ $subject = "Portfolio";
 //=========
  
 // Create email's header
-$header = "From: " .htmlentities($_POST['name']). htmlentities($_POST['mail']) .$newLine;
-$header.= "Reply-to: " .htmlentities($_POST['name']). htmlentities($_POST['mail']) .$newLine;
+$header = "From: " .htmlentities($_POST['name']). " " .htmlentities($_POST['mail']) .$newLine;
+$header.= "Reply-to: " .htmlentities($_POST['name']). " " .htmlentities($_POST['mail']) .$newLine;
 $header.= "MIME-Version: 1.0".$newLine;
 $header.= "Content-Type: multipart/alternative;".$newLine." boundary=\"$boundary\"".$newLine;
 //==========
