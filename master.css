@@ -4,7 +4,6 @@ body
     font-family: 'Quattrocento Sans', cursive;
     font-size: 2em;
     padding-top: 70px;
-    padding-bottom: 100px;
 }
 
 body[aria-expanded="true"]
@@ -35,8 +34,7 @@ nav, .title
 
 .copyright
 {
-	background: white;
-	padding-top: 20px;
+	margin: 20px 0;
 	font-size: 0.7em;
 }
 
@@ -148,7 +146,7 @@ button .barColor
 @-moz-keyframes animImg 	  {0%  { opacity:0;} 100%{ opacity:100%;}  }
 @-webkit-keyframes animImg   {0%  { opacity:0;} 100%{ opacity:100%;}  }
 
-.text2
+.text2, .imgTribute
 {
 	-moz-animation:animImg 2s linear;
 	-webkit-animation:animImg 2s linear;
