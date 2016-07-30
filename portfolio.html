@@ -1,219 +1,214 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="These are my personal projects, they are all responsive.">
+    <meta name="keywords" content="portfolio, responsive, personal projects">
+    <meta name="author" content="Thierry HOR">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quattrocento+Sans" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="master.css">
 
-	<style>
+    <style>
 
-	.imgKwoon, .imgTribute
-	{
-		max-height: 300px;
-		max-width: 100%;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+    .imgKwoon, .imgTribute
+    {
+        max-height: 300px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition-property: opacity;
+        transition-duration: 250ms;
+    }
 
-	.comingSoon:hover
-	{
-		color:blue;
-	}
+    .comingSoon:hover
+    {
+        color:blue;
 
-	
-	.imgKwoon:hover, .imgTribute:hover
-	{
-		opacity: 0.8;
-	}
+    }
 
-	.colPortfolio
-	{
-		margin: 10px 0;
-	}
-	
-	figcaption
-	{
-		margin-top: 10px;
-	}
+    .comingSoon
+    {
+        display: inline;
+    }
+    
+    .imgKwoon:hover, .imgTribute:hover
+    {
+        opacity: 0.8;
+        transform: translateZ(200px);
+    }
 
-	</style>
+    .colPortfolio
+    {
+        margin: 10px 0;
+    }
+    
+    figcaption
+    {
+        margin-top: 10px;
+    }
+
+    </style>
 
 </head>
 
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="barColor icon-bar"></span>
-			        <span class="barColor icon-bar"></span>
-			        <span class="barColor icon-bar"></span>
-		      	</button>
-				<a class="navbar-brand brandName" href="index.html">Thierry</a>
-			</div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="barColor icon-bar"></span>
+                    <span class="barColor icon-bar"></span>
+                    <span class="barColor icon-bar"></span>
+                </button>
+                <a class="navbar-brand brandName" href="index.html">Thierry</a>
+            </div>
 
-			<div class="collapse navbar-collapse" id="menu">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li class="active"><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-		</div>
-	</nav>
+        </div>
+    </nav>
 
-	<div class="container-fluid">
-		<div class="row titleBorder">
-			<div class="col-md-offset-1 col-md-11 col-xs-12">
-				<h2 class="title">Portfolio</h2>
-			</div>
-		</div>
-	</div>
+    <section>
+    <div class="container-fluid">
+        <div class="row titleBorder">
+            <div class="col-md-offset-1 col-md-11 col-xs-12">
+                <h2 class="title">Portfolio</h2>
+            </div>
+        </div>
+    </div>
 
-	<div class="container">	
-		<h3><strong>Responsive Websites & Personal Projects</strong></h3>		
-	</div>
+    <div class="container"> 
+        <h3><strong>Responsive Websites & Personal Projects</strong></h3>       
+    </div>
 
-	<div class="container-fluid">
-		<div class="row">			
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgKwoon" src="images/kwoonIntegration.png" data-toggle="modal" data-target="#project1" data-backdrop="true">
-					<figcaption><strong>Front-End Project</strong></figcaption>
-				</figure>
-			</div>
+    <div class="container-fluid">
+        <div class="row">           
+            <div class="col-md-4 col-sm-6 colPortfolio text-center">
+                <figure>
+                    <img class="imgKwoon" src="images/kwoonIntegration.png" alt="Front-End Project" data-toggle="modal" data-target="#project1" data-backdrop="true">
+                    <figcaption><strong>Front-End Project</strong></figcaption>
+                </figure>
+            </div>
 
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<figure>
-					<img class="imgTribute" src="images/tributePage.jpg" data-toggle="modal" data-target="#project2" data-backdrop="true">
-					<figcaption><strong>Tribute Page</strong></figcaption>
-				</figure>
-			</div>
-			<div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 col-sm-6 colPortfolio text-center">
+                <figure>
+                    <img class="imgTribute" src="images/tributePage.jpg" alt="Tribute Page" data-toggle="modal" data-target="#project2" data-backdrop="true">
+                    <figcaption><strong>Tribute Page</strong></figcaption>
+                </figure>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
 
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<div style="padding-top: 15%; padding-bottom: 20%">
-					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
-				</div>
-			</div>
-			<div class="clearfix visible-lg-block visible-md-block"></div>
+            <div class="col-md-4 col-sm-6 colPortfolio text-center">
+                <div style="padding:25% 0">
+                    <h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>              
+                </div>
+            </div>
+            <div class="clearfix visible-lg-block visible-md-block"></div>
 
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<div style="padding-top: 15%; padding-bottom: 20%">
-					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
-				</div>
-			</div>
+        </div>      
+    </div>
 
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<div style="padding-top: 15%; padding-bottom: 20%">
-					<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
-				</div>
-			</div>
+    <!-- Modal1 -->
+    <div class="modal fade" id="project1" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content" style="background-color:Azure;">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><strong>Front-End Project</strong></h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-4">
+              <figure>
+                <a href="https://github.com/webdevthierry/Projet-Integration" title="source code of the project" target="_blank">
+                    <img class="imgKwoon" src="images/kwoonIntegration.png" alt="Front-End Project">
+                </a>
+              <figcaption><strong>Click on the image to see the source code</strong></figcaption>
+                </div>
+                <div class="col-md-8">
+              <p>Webpages creation from images
+              <br> Use of Html5, Css3 & Bootstrap
+              <br>
+              <strong>Features:</strong>
+              <br>Sliders, Icons, Scrollspy</p>
+              </div>
+              </figure>
+            </div>
+            <div class="modal-footer" style="clear: both;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
-			<div class="col-md-4 col-sm-6 colPortfolio text-center">
-				<div style="padding-top: 15%; padding-bottom: 20%">
-				<h3 class="comingSoon">Coming Soon <br>Maybe you?</h3>				
-			</div>
-		</div>		
-	</div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="project2" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content" style="background-color:Azure;">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><strong>Tribute Page</strong></h4>
+            </div>
+            <div class="modal-body">
+            
+                <div class="col-md-4">
+                    <figure>
+                        <a href="https://codepen.io/webdevthierry/full/mPWMEr" title="Tribute page in Codepen" target="_blank">
+                            <img class="imgTribute" src="images/tributePage.jpg" alt="Tribute Page">
+                        </a>
+                        <figcaption><strong>Click on the image to see the codepen</strong></figcaption>
+                    </figure>
+                </div>
 
-	<!-- Modal1 -->
-	<div class="modal fade" id="project1" role="dialog">
-	    <div class="modal-dialog modal-lg">
-	    
-	      <!-- Modal content-->
-	      <div class="modal-content" style="background-color:Azure ;">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title"><strong>Front-End Project</strong></h4>
-	        </div>
-	        <div class="modal-body">
-	        	<div class="col-md-4">
-	          <figure>
-	          	<a href="https://github.com/webdevthierry/Projet-Integration" target="_blank">
-	          		<img class="imgKwoon" src="images/kwoonIntegration.png">
-	          	</a>
-	          <figcaption><strong>Click on the image to see the source code</strong></figcaption>
-	          	</div>
-	          	<div class="col-md-8">
-	          <p>Webpages creation from images
-	          <br> Use of Html5, Css3 & Bootstrap
-	          <br>
-	          <strong>Features:</strong>
-	          <br>Sliders, Icons, Scrollspy</p>
-	          </div>
-	          </figure>
-	        </div>
-	        <div class="modal-footer" style="clear: both;">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        </div>
-	      </div>
-	    </div>
- 	</div>
-
- 	<!-- Modal2 -->
-	<div class="modal fade" id="project2" role="dialog">
-	    <div class="modal-dialog modal-lg">
-	    
-	      <!-- Modal content-->
-	      <div class="modal-content" style="background-color:Azure ;">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title"><strong>Tribute Page</strong></h4>
-	        </div>
-	        <div class="modal-body">
-	       	
-	       		<div class="col-md-4">
-	       			<figure>
-	            		<a href="https://codepen.io/webdevthierry/full/mPWMEr" target="_blank">
-					 		<img class="imgTribute" src="images/tributePage.jpg">
-						</a>
-						<figcaption><strong>Click on the image to see the codepen</strong></figcaption>
-					</figure>
-	       		</div>
-
-	       		<div class="col-md-8">
-	       			<p>Tribute to the martial arts legend
-	          <br> Use of Html5, Css3 & Bootstrap</p>
-	       		</div>
-	         
-	        </div>
-	        <div class="modal-footer" style="clear: both;">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        </div>
-	      </div>
-	    </div>
- 	</div>
-
- 	<nav class="copyright navbar-fixed-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-6">
-				<p><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
-			</div>
-			<div class="col-xs-6" style="text-align:right;">
-				<ul class="list-inline">
-					<li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-					<li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
-					<li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
-				</ul>
-			</div>
-		</div>
-			
-	</div>
-	</nav>
+                <div class="col-md-8">
+                    <p>Tribute to the martial arts legend
+              <br> Use of Html5, Css3 & Bootstrap</p>
+                </div>
+             
+            </div>
+            <div class="modal-footer" style="clear: both;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p class="copyright"><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
+                </div>
+                <div class="col-xs-6" style="text-align:right;">
+                    <ul class="list-inline copyright">
+                        <li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+    </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

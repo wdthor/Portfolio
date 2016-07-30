@@ -1,24 +1,56 @@
+*
+{
+    margin: 0;
+}
+html, body
+{
+    height: 100%;
+}
+
 body
 {
     background-color: #f9c667;
     font-family: 'Quattrocento Sans', cursive;
     font-size: 2em;
     padding-top: 70px;
+    color: #444;
 }
 
-body[aria-expanded="true"]
+section
 {
-	padding-top: 280px;
+    min-height: 100%;
+    margin-bottom: -60px;
+}
+
+section:after
+{
+    content: "";
+    display: block;
+}
+
+footer, section:after
+{
+    min-height: 60px;
+}
+footer
+{
+    background-color: #f5f5f5;
+}
+
+.copyright
+{
+    margin-top: 15px;
+    font-size: 0.7em;
 }
 
 nav, .title
 {
-	font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .title
 {
-	margin: 5px auto;
+    margin: 5px auto;
 }
 
 .brandName
@@ -28,147 +60,154 @@ nav, .title
 
 .titleBorder
 {
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.copyright
+
+.flag1, .flag
 {
-	margin: 20px 0;
-	font-size: 0.7em;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
 }
+
+.flag1
+{
+}
+
 
 #github
 {
-	color: black;
+    color: black;
 }
 
 #github:hover
 {
-	color: #666;
+    color: #666;
 }
 
 #viadeo
 {
-	color: orange;
+    color: orange;
 }
 
 #viadeo:hover
 {
-	color: darkorange;
+    color: darkorange;
 }
 
 #navbarBg
 {
-	background-color: red;
+    background-color: red;
 }
 
 button .barColor
 {
-	background-color: white !important;
+    background-color: white !important;
 }
 
 .navBottom
 {
-	font-size: 1em;
+    font-size: 1em;
 }
 
 .animHtml
 {
-	-moz-animation:animHtml 2s ease-out;
-	-webkit-animation:animHtml 2s ease-out;
+    -moz-animation:animHtml 2s ease-out;
+    -webkit-animation:animHtml 2s ease-out;
 }
 
-@-moz-keyframes animHtml 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:80%;}  }
+@-moz-keyframes animHtml      {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:80%;}  }
 @-webkit-keyframes animHtml   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:80%;}  }
 
 .animBootstrap
 {
-	-moz-animation:animBootstrap 2s ease-out;
-	-webkit-animation:animBootstrap 2s ease-out;
+    -moz-animation:animBootstrap 2s ease-out;
+    -webkit-animation:animBootstrap 2s ease-out;
 }
 
-@-moz-keyframes animBootstrap 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:70%;}  }
+@-moz-keyframes animBootstrap     {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:70%;}  }
 @-webkit-keyframes animBootstrap   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:70%;}  }
 
 .animJQuery
 {
-	-moz-animation:animJQuery 2s ease-out;
-	-webkit-animation:animJQuery 2s ease-out;
+    -moz-animation:animJQuery 2s ease-out;
+    -webkit-animation:animJQuery 2s ease-out;
 }
 
-@-moz-keyframes animJQuery 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:50%;}  }
+@-moz-keyframes animJQuery    {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:50%;}  }
 @-webkit-keyframes animJQuery   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:50%;}  }
 
 .animPhp
 {
-	-moz-animation:animPhp 2s ease-out;
-	-webkit-animation:animPhp 2s ease-out;
+    -moz-animation:animPhp 2s ease-out;
+    -webkit-animation:animPhp 2s ease-out;
 }
 
-@-moz-keyframes animPhp 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
+@-moz-keyframes animPhp       {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 @-webkit-keyframes animPhp   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 
 .animMysql
 {
-	-moz-animation:animMysql 2s ease-out;
-	-webkit-animation:animMysql 2s ease-out;
+    -moz-animation:animMysql 2s ease-out;
+    -webkit-animation:animMysql 2s ease-out;
 }
 
-@-moz-keyframes animMysql 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
+@-moz-keyframes animMysql     {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 @-webkit-keyframes animMysql   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 
 .animGit
 {
-	-moz-animation:animGit 2s ease-out;
-	-webkit-animation:animGit 2s ease-out;
+    -moz-animation:animGit 2s ease-out;
+    -webkit-animation:animGit 2s ease-out;
 }
 
-@-moz-keyframes animGit 	  {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
+@-moz-keyframes animGit       {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 @-webkit-keyframes animGit   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 
 
 .title
 {
-	-moz-animation:title 1s ease-out;
-	-webkit-animation:title 1s ease-out;
+    -moz-animation:title 1s ease-out;
+    -webkit-animation:title 1s ease-out;
 }
 
-@-moz-keyframes title 	  {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
+@-moz-keyframes title     {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 @-webkit-keyframes title   {0%  { margin-left:-200px;} 100%{ margin-left:0px;}  }
 
 .imgKwoon, .animSkill, .portfolioTablet, .iphone, .text1, .portfolioIphone
 {
-	-moz-animation:animImg 1s linear;
-	-webkit-animation:animImg 1s linear;
+    -moz-animation:animImg 1s linear;
+    -webkit-animation:animImg 1s linear;
 }
 
-@-moz-keyframes animImg 	  {0%  { opacity:0;} 100%{ opacity:100%;}  }
+@-moz-keyframes animImg       {0%  { opacity:0;} 100%{ opacity:100%;}  }
 @-webkit-keyframes animImg   {0%  { opacity:0;} 100%{ opacity:100%;}  }
 
 .text2, .imgTribute
 {
-	-moz-animation:animImg 2s linear;
-	-webkit-animation:animImg 2s linear;
+    -moz-animation:animImg 2s linear;
+    -webkit-animation:animImg 2s linear;
 }
 
-@-moz-keyframes animImg 	  {0%  { opacity:0;} 50%  { opacity:0;} 100%{ opacity:100%;}  }
+@-moz-keyframes animImg       {0%  { opacity:0;} 50%  { opacity:0;} 100%{ opacity:100%;}  }
 @-webkit-keyframes animImg   {0%  { opacity:0;} 50%  { opacity:0;} 100%{ opacity:100%;}  }
 
 .text3
 {
-	-moz-animation:animImg 3s linear;
-	-webkit-animation:animImg 3s linear;
+    -moz-animation:animImg 3s linear;
+    -webkit-animation:animImg 3s linear;
 }
 
-@-moz-keyframes animImg 	  {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
+@-moz-keyframes animImg       {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
 @-webkit-keyframes animImg   {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
 
 .animTable
 {
-	-moz-animation:animTable 1s linear;
-	-webkit-animation:animTable 1s linear;
+    -moz-animation:animTable 1s linear;
+    -webkit-animation:animTable 1s linear;
 }
 
-@-moz-keyframes animTable 	  {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+@-moz-keyframes animTable     {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
 @-webkit-keyframes animTable   {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
