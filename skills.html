@@ -2,8 +2,9 @@
 
 <html lang="en">
 <head>
-    <title>Skills</title>
-    <meta charset="utf-8">
+    <title>What I can do</title>
+    <meta charset="UTF-8">
+
     <meta name="description" content="These are my web development and language skills.">
     <meta name="keywords" content="HTML5, CSS3, Bootstrap, JQuery, PHP, MySQL, Git, trilingual, translation">
     <meta name="author" content="Thierry HOR">
@@ -14,6 +15,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="master.css">
+    
     <style>
 
     .skills
@@ -21,30 +23,71 @@
         height: 100px;
     }
 
-.fa-star
-{
-    color: yellow;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);"
-}
+    .fa-star
+    {
+        color: yellow;
+    }
 
-.spinner {
-  text-align: center;
-  animation-name: spin, depth;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-}
-@keyframes spin {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(-360deg); }
-}
-@keyframes depth {
-  0% { text-shadow: 0 0 black; }
-  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
-  50% { text-shadow: 0 0 black; }
-  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
-  100% { text-shadow: 0 0 black; }
-}
+/*Spinning Stars*/
+    .spinner
+    {
+      animation-name: spin, depth;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+    }
+
+    @keyframes spin
+    {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(-360deg); }
+    }
+
+    @keyframes depth
+    {
+      0% { text-shadow: 0 0 black; }
+      25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+      50% { text-shadow: 0 0 black; }
+      75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+      100% { text-shadow: 0 0 black; }
+    }
+
+/*Animation Skills*/
+    .animHtml
+    {
+        -moz-animation:animHtml 2s ease-out;
+        -webkit-animation:animHtml 2s ease-out;
+    }
+
+    @-moz-keyframes animHtml      {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:80%;}  }
+    @-webkit-keyframes animHtml   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:80%;}  }
+
+    .animBootstrap
+    {
+        -moz-animation:animBootstrap 2s ease-out;
+        -webkit-animation:animBootstrap 2s ease-out;
+    }
+
+    @-moz-keyframes animBootstrap     {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:70%;}  }
+    @-webkit-keyframes animBootstrap   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:70%;}  }
+
+    .animJQuery
+    {
+        -moz-animation:animJQuery 2s ease-out;
+        -webkit-animation:animJQuery 2s ease-out;
+    }
+
+    @-moz-keyframes animJQuery    {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:50%;}  }
+    @-webkit-keyframes animJQuery   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:50%;}  }
+
+    .animPhp, .animMysql, .animGit
+    {
+        -moz-animation:animSkills 2s ease-out;
+        -webkit-animation:animSkills 2s ease-out;
+    }
+
+    @-moz-keyframes animSkills       {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
+    @-webkit-keyframes animSkills   {0%  { width:0px; opacity:0%;} 50% { width:0px; opacity:100%;} 100%{ width:60%;}  }
 
     </style>
 
@@ -77,93 +120,90 @@
 
         </div>
     </nav>
-<section>
-
-    <div class="container-fluid">
-        <div class="row titleBorder">
-            <div class="col-sm-offset-1 col-xs-11">
-                <h2 class="title">Skills</h2>
+    <section>
+        <div class="container-fluid">
+            <div class="row titleBorder">
+                <div class="col-sm-offset-1 col-xs-11">
+                    <h2 class="title">Skills</h2>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        
-        <h3>Web Development: </h3>
-       
-        <div class="row">
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgHtml skills animSkill" src="images/html5css3.png" alt="Skill HTML5 & CSS3">
-                <div class="progress">
-            <div class="progress-bar progress-bar-info animHtml" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                <span class="sr-only">80% Complete</span>
-            </div>
+        <div class="container">
+            <h3>Web Development: </h3>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgHtml skills animSkill" src="images/html5css3.png" alt="Skill HTML5 & CSS3">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animHtml" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                            <span class="sr-only">80% Complete</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgBootstrap skills animSkill" src="images/bootstrap.png" alt="Skill Bootstrap">
-                <div class="progress">
-            <div class="progress-bar progress-bar-info animBootstrap" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                <span class="sr-only">70% Complete</span>
-            </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgBootstrap skills animSkill" src="images/bootstrap.png" alt="Skill Bootstrap">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animBootstrap" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgJquery skills animSkill" src="images/jquery.png" alt="Skill JQuery">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info animJQuery" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                    <span class="sr-only">50% Complete</span>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgJquery skills animSkill" src="images/jquery.png" alt="Skill JQuery">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animJQuery" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                        <span class="sr-only">50% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgPhp skills animSkill" src="images/php.png" alt="Skill PHP">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animPhp" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgMysql skills animSkill" src="images/mysql.png" alt="Skill MySQL">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animMysql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img class="imgGit skills animSkill" src="images/git.png" alt="Skill Git">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info animGit" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgPhp skills animSkill" src="images/php.png" alt="Skill PHP">
-                <div class="progress">
-            <div class="progress-bar progress-bar-info animPhp" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only">60% Complete</span>
-            </div>
+            <h3>Languages: </h3>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>French:
+                    <br>English:
+                    <br>Cambodian (Khmer):
+                    </p>
+                </div>
+                <div class="col-sm-9" style="margin: 10px 0;">
+                    <i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgMysql skills animSkill" src="images/mysql.png" alt="Skill MySQL">
-                <div class="progress">
-            <div class="progress-bar progress-bar-info animMysql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only">60% Complete</span>
-            </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 text-center">
-                <img class="imgGit skills animSkill" src="images/git.png" alt="Skill Git">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info animGit" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        <span class="sr-only">60% Complete</span>
-                    </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>I have done translation in all 3 languages.</p>
                 </div>
             </div>
         </div>
-        <h3>Languages: </h3>
-        <div class="row">
-            <div class="col-sm-3">
-                <p>French:
-                <br>English:
-                <br>Cambodian (Khmer):
-                </p>
-            </div>
-            <div class="col-sm-9" style="margin: 10px 0;">
-                <i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i><i class="fa fa-star fa-3x spinner" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>I have done translation in all 3 languages.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
     <footer>
     	<div class="container">
     		<div class="row">
