@@ -10,8 +10,8 @@
     <meta name="author" content="Thierry HOR">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -19,55 +19,21 @@
 
     <link rel="stylesheet" type="text/css" href="master.css">
 
-    <style>
+    <style type="text/css">
 
-    .textCenter
-    {
-        text-align: center;
-    }
+        body
+        {
+            background: url("images/beach.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
 
-    .portfolioIphone
-    {
-        position: absolute;
-        right: 28%;
-        top: 100px;
-        width: 50px;
-        width: 16%;
-        z-index: 2;
-    }
-
-    .portfolioTablet
-    {
-        position: absolute;
-        right: 14%;
-        top: 20px;
-        width: 200px;
-        width: 22%;
-    }
-
-    .hiddenDiv
-    {
-        height: 350px;
-    }
-    
-    .text, .text1, .text2, .text3
-    {
-        font-size: 1.2em;
-    }
-
-    .div-7
-    {
-        margin-top: -7px;
-    }
-
-    .text3
-    {
-        -moz-animation:animImg 3s linear;
-        -webkit-animation:animImg 3s linear;
-    }
-
-    @-moz-keyframes animImg       {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
-    @-webkit-keyframes animImg   {0%  { opacity:0;} 75%  { opacity:0;} 100%{ opacity:100%;}  }
+        .errorText
+        {
+            font-family: "Quattrocento Sans";
+            color: blue;
+            background-color: rgba(255, 255, 255, 0.8);
+            opacity: ;
+        }
 
     </style>
 
@@ -103,29 +69,18 @@
 
     <section>
         <div class="container-fluid">
-            <div class="row titleBorder">
-                <div class="col-sm-offset-1 col-xs-11">
-                    <h2 class="title">Create awesome websites</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
             <div class="row">
-                <h1 class="textCenter">Thierry HOR</h1>
-                <h2 class="textCenter">Full-Stack Web Developer</h2>
-
-                <div class="col-sm-offset-1 col-xs-11">
-                    <p class="text">Create websites that are:</p>
-                    <p class="text1 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> Up-to-date</p>
-                    <p class="text2 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> Responsive <i class="fa fa-mobile" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-desktop" aria-hidden="true"></i></p>
-                    <p class="text3 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> And of course awesome!</p>
-                    <img src="images/portfolioIphone.png" alt="Portfolio on Smartphone" class="portfolioIphone hidden-xs hidden-sm">
-                    <img src="images/portfolioTablet.png" alt="Portfolio on Tablet" class="portfolioTablet hidden-xs hidden-sm">
+                <div class="col-sm-offset-1 col-sm-11">
+                    <p class="errorText">- 404 - Sorry the dog couldn't find the page, however he can take back to the <a href="index.html"><em>homepage</em></a>.</p>
+                    <p class="errorText">- 404 - Oups, le chien n'a pas trouvé la page, cependant il peut vous ramener à la <a href="index.html"><em>page d'accueil</em></a>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
+                <img class="img-responsive" src="images/404Image.jpg" alt="Error 404 image">
                 </div>
             </div>
         </div>
-        
-        <div class="hidden-xs hiddenDiv"></div>
     </section>
 
     <footer>
