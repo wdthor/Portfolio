@@ -9,14 +9,14 @@
     <meta name="author" content="Thierry HOR">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="master.css">
+    <link rel="stylesheet" href="css/master.css">
 
     <style>
     
@@ -35,7 +35,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -55,75 +54,76 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
-                    <a href="skills.html"><img class="flag" src="images/frFlag.png"></a>
+                    <a href="fr/index.html"><img class="flag" src="images/frFlag.png"></a>
                     <div class="div-7"></div>
-                    <a href="contact.html"><img class="flag1" src="images/EngFlag.png"></a>
+                    <a href="index.html"><img class="flag1" src="images/EngFlag.png"></a>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section>
-    <div class="container-fluid">
-        <div class="row titleBorder">
-            <div class="col-sm-offset-1 col-xs-11">
-                <h2 class="title">Contact</h2>
+        <div class="container-fluid">
+            <div class="row titleBorder">
+                <div class="col-sm-offset-1 col-xs-11">
+                    <h2 class="title">Contact</h2>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-            <p><i class="fa fa-thumbs-up thumbs" aria-hidden="true"></i> You like my work?</p><p>Available immediately in Lyon.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-11">
+                <p><i class="fa fa-thumbs-up thumbs" aria-hidden="true"></i> You like my work?</p>
+                <p>Available immediately in Lyon.</p>
                 <p>Contact me if you want to hire me or just say hi!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <form method="POST" action="contact.php">
+                        <div class="form-group input-group">
+                            <label class="input-group-addon btn-info iconPad" for="name">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                        </div>
+                            
+                        <div class="form-group input-group">
+                            <label class="input-group-addon btn-info" for="email">
+                                <i class="fa fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control" name="mail" id="email" placeholder="Email" required>
+                        </div>
+                            
+                    <textarea class="form-group form-control" name="message" rows="4" placeholder="Your message" required></textarea>
+
+                    <input class="btn btn-primary btn-block text-uppercase" type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6">
-                <form method="POST" action="contact.php">
-                    <div class="form-group input-group">
-                        <label class="input-group-addon btn-info iconPad" for="name">
-                            <i class="fa fa-user"></i>
-                        </label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-                    </div>
-                        
-                    <div class="form-group input-group">
-                        <label class="input-group-addon btn-info" for="email">
-                            <i class="fa fa-envelope"></i>
-                        </label>
-                        <input type="email" class="form-control" name="mail" id="email" placeholder="Email" required>
-                    </div>
-                        
-                <textarea class="form-group form-control" name="message" rows="4" placeholder="Your message" required></textarea>
-
-                <input class="btn btn-primary btn-block text-uppercase" type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </div>
     </section>
 
     <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                <p class="copyright"><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
-            </div>
-            <div class="col-xs-6 socialCol">
-                <ul class="list-inline copyright">
-                    <li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                    <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
-                    <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p class="copyright"><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
+                </div>
+                <div class="col-xs-6 socialCol">
+                    <ul class="list-inline copyright">
+                        <li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

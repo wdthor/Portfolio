@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <title>Petite présentation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Petite présentation sur moi-même et mon parcours.">
+    <meta name="keywords" content="Développeur Web Full-Stack, Expériences Professionnelles, Formation, Centres d'intéret">
+    <meta name="author" content="Thierry HOR">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+
+    <link rel="stylesheet" href="../css/master.css">
+    
+    <style>
+
+    button .barColor
+    {
+        background-color: white !important;
+    }
+    
+    .profileContainer
+    {
+        background-color: #F8F8F8;
+        margin: 25px 0;
+    }
+    
+    #profile
+    {
+        display:block;
+        margin: 10px auto;
+        width: 5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .profileIntro
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .profileCaption
+    {
+        text-align: center;
+    }
+    
+    .div20
+    {
+        height: 20px;
+    }
+    
+    tr:hover
+    {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        background-color: #e8b556;
+    }
+    
+    th, td
+    {
+        text-align: center;
+        padding:5px 10px;
+    }
+    
+    .cvText
+    {
+        text-align: left;
+    }
+    
+    .dateCol
+    {
+        width: 170px;
+    }
+    
+    .link:link
+    {
+        color: #447;
+    }
+    
+    .link:visited
+    {
+        color: #447;
+    }
+    
+    ul li img
+    {
+        height: 30px;
+    }
+    
+    .medals
+    {
+        height: 150px;
+    }
+    
+    tr td img
+    {
+        width:150px;
+    }
+    
+    li
+    {
+        color: blue;
+    }
+    
+    .textList
+    {
+        color: black;
+    }
+
+    .animTable
+    {
+        -moz-animation:animTable 1s linear;
+        -webkit-animation:animTable 1s linear;
+    }
+
+    @-moz-keyframes animTable     {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+    @-webkit-keyframes animTable   {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+    
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="barColor icon-bar"></span>
+                    <span class="barColor icon-bar"></span>
+                    <span class="barColor icon-bar"></span>
+                </button>
+                <a class="navbar-brand brandName" href="index.html">Thierry</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="skills.html">Compétences</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="about.html">Qui Suis-Je</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="index.html"><img class="flag" src="../images/frFlag.png"></a>
+                    <div class="div-7"></div>
+                    <a href="../index.html"><img class="flag1" src="../images/EngFlag.png"></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row titleBorder">
+                <div class="col-sm-offset-1 col-xs-11">
+                    <h2 class="title">Qui Suis-Je</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid profileContainer">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-9 profileIntro">
+                    <p>Développeur Web Full-Stack depuis plus d'un an, J'aime bien apprendre de nouvelle choses et me dépasser constamment.</p>
+                    <p>On dit souvent de moi que je suis ponctuel et volontaire.</p>
+                </div>
+                <div class="col-sm-2">
+                    <figure>
+                            <img class="img-circle" id="profile" src="../images/photo2.jpg" alt="Thierry HOR">
+                            <figcaption class="profileCaption">Thierry HOR</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="div20"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-3">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Expérience</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Formation</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Centres d'Intéret</a></li>
+                  </ul>
+                </div>
+            </div>
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <h3>Expériences professionnelles</h3>
+                  <div class="table-responsive">
+                    <table class="animTable">
+                        <tr>
+                            <th>2016</th>
+                            <th class="hidden-xs">
+                             Développeur Web 
+                            </th>
+                            <td class="hidden-xs">
+                             <img src="../images/resolving.png" alt="Resolving">
+                            </td>
+                            <td>
+                                Création de pages PDF et Excel en prenant des informations sur une base de données en utilisant des librairies PHP pour la société <strong><a class="link" target="_blank" href="http://resolving.com/Fr/">Resolving</a></strong>. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th class="hidden-xs">
+                             Développeur Web PHP 
+                            </th>
+                            <td class="hidden-xs">
+                                <img src="../images/starfleetGroup.jpg" alt="Starfleet Group">
+                            </td>
+                            <td>
+                                Maintenance et développement du site internet Japonais <a class="link" target="_blank" href="https://www.ecofa.jp"><em>Ecofa</em></a> qui est une plateforme web de distribution de produits recyclés pour la société <strong><a class="link" target="_blank" href="http://www.starfleet.co.jp">Starfleet Group</a></strong>. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2013</th>
+                            <th class="hidden-xs">
+                             Manage d'Opérateurs de Saisie 
+                            </th>
+                            <td class="hidden-xs">
+                                <img src="../images/aitySolutions.jpg" alt="Aity Solutions">
+                            </td>
+                            <td>
+                                Participation à l'écriture du guide touristique <a class="link" target="_blank" href="http://www.overcambodia.com/en"><em>Overcambodia</em></a> pour la société <strong><a class="link" target="_blank" href="http://aitysolutions.com">Aity Solutions</a></strong>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="cvText">Pour plus d'information, voici mon <em><a href="ThierryCV.pdf" title="My CV in PDF format" download="Thierry's CV - Full-Stack Web Developer.pdf">CV <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></em>
+                            </td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <h3>Education</h3>
+                  <div class="table-responsive">
+                      <table>
+                        <tr>
+                            <th class="dateCol">Sept 2016</th>
+                            <th>Ip Formation</th>
+                            <td>Je recherche actuellement une entreprise pour un contrat de professionnalisation afin de continuer à me former dans le développement web (Bac+4).</td>
+                        </tr>
+                        <tr>
+                            <th>2016</th>
+                            <th>It Akademy</th>
+                            <td>Développement d'applications web et mobiles</td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th>Setec Institute</th>
+                            <td>
+                                Master2 en management du système d'information
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th>University of Cambodia</th>
+                            <td>
+                                Master en littérature Anglaise 
+                            </td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <h3>Centres d'Intéret</h3>
+                  <ul>
+                    <li><span class="textList">Arts Martiaux</span></li>
+                    Les arts martiaux m'ont appris la discipline et le sens de la compétition entre autres.
+                    <ul>
+                        <li><span class="textList">Kung-Fu Wushu</span>
+                            <br>
+                            <img src="../images/blueBelt.png" alt="Blue belt">
+                            <ul>
+                                <li>
+                                    <span class="textList">3ème de la coupe de France en 2004</span>
+                                </li>
+                                <img class="medals" src="../images/medals.jpg" alt="Two Medals">
+                            </ul>
+                        </li>
+                            
+                        <li><span class="textList">Taekwondo</span>
+                            <br>
+                            <img src="../images/blueBelt.png" alt="Blue belt">
+                        </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p class="copyright"><i class="fa fa-copyright"></i> 2016 Webdevthierry. All rights reserved.</p>
+                </div>
+                <div class="col-xs-6 socialCol">
+                    <ul class="list-inline copyright">
+                        <li><a href="http://fr.linkedin.com/in/horthierry/fr" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>               
+        </div>
+    </footer>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
