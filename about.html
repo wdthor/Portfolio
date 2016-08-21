@@ -15,21 +15,22 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CExo">
 
     <link rel="stylesheet" href="css/master.css">
 
     <style>
 
-    button .barColor
-    {
-        background-color: white !important;
-    }
-    
     .profileContainer
     {
-        background-color: #F8F8F8;
+        background-color: #3BB9FF;
         margin: 25px 0;
+        color:white;
+    }
+
+    .tab
+    {
+        color: #3BB9FF;
     }
     
     #profile
@@ -37,7 +38,7 @@
         display:block;
         margin: 10px auto;
         width: 5em;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 1px 4px 8px, 1px 6px 20px;
     }
     
     .profileIntro
@@ -60,7 +61,7 @@
     {
         border-top: 2px solid white;
         border-bottom: 2px solid white;
-        background-color: #e8b556;
+        background-color: #3BB9FF;
     }
     
     th, td
@@ -69,9 +70,9 @@
         padding:5px 10px;
     }
     
-    .cvText
+    .cv
     {
-        text-align: left;
+        color: blue;
     }
     
     .dateCol
@@ -81,12 +82,12 @@
     
     .link:link
     {
-        color: #447;
+        color: lime;
     }
     
     .link:visited
     {
-        color: #447;
+        color: lime;
     }
     
     ul li img
@@ -111,7 +112,7 @@
     
     .textList
     {
-        color: black;
+        color: white;
     }
 
     .animTable
@@ -120,8 +121,8 @@
         -webkit-animation:animTable 1s linear;
     }
 
-    @-moz-keyframes animTable     {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
-    @-webkit-keyframes animTable   {0%  { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+    @-moz-keyframes animTable {0% { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
+    @-webkit-keyframes animTable {0% { margin-bottom:-300px;} 100%{ margin-bottom:0px;}  }
     
     </style>
 
@@ -133,9 +134,7 @@
             <div class="navbar-header">
                 <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
+                    Menu
                 </button>
                 <a class="navbar-brand brandName" href="index.html">Thierry</a>
             </div>
@@ -145,157 +144,160 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="active"><a href="about.html">About</a></li>
+                    <li class="active"><a id="active" href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <a href="fr/index.html"><img class="flag" alt="French Flag" src="images/FrFlag.png"></a>
-                    <div class="div-7"></div>
-                    <a href="index.html"><img class="flag1" alt="English Flag" src="images/EngFlag.png"></a>
+                    <li>
+                        <a href="fr/index.html"><img class="flag" alt="French Flag" src="images/FrFlag.png"><span class="hidden-sm hidden-md hidden-lg"> Français</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img class="flag1" alt="English Flag" src="images/EngFlag.png"> <span class="hidden-sm hidden-md hidden-lg">English</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section>
-    <div class="container-fluid">
-        <div class="row titleBorder">
-            <div class="col-sm-offset-1 col-xs-11">
-                <h2 class="title">About</h2>
+        <div class="container-fluid">
+            <div class="row titleBorder">
+                <div class="col-sm-offset-1 col-xs-11">
+                    <h2 class="title">About</h2>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid profileContainer">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-9 profileIntro">
-                <p>Full-Stack Web Developer for more than a year. I like learning new things and getting better everyday.</p>
-                <p>I am known for my punctuality and for being a hard-working person.</p>
-            </div>
-            <div class="col-sm-2">
-                <figure>
-                        <img class="img-circle" id="profile" src="images/photo2.jpg" alt="Thierry HOR">
-                        <figcaption class="profileCaption">Thierry HOR</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-
-    <div class="div20"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-xs-3">
-              <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Experience</a></li>
-                <li><a data-toggle="tab" href="#menu1">Education</a></li>
-                <li><a data-toggle="tab" href="#menu2">Interests</a></li>
-              </ul>
+        <div class="container-fluid profileContainer">
+            <div class="row">
+                <div class="col-sm-2 col-sm-push-10">
+                    <figure>
+                            <img class="img-circle" id="profile" src="images/photo2.jpg" alt="Thierry HOR">
+                            <figcaption class="profileCaption">Thierry HOR</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-offset-1 col-sm-pull-2 col-sm-9 profileIntro">
+                    <p>Full-Stack Web Developer for more than a year, I like learning new things and getting better everyday.</p>
+                    <p>Pursuing my education for a Master's Degree in Web Development, I'm looking for a company to work for a professional contract.</p>
+                    <p>For more information, check out my <em><a class="cv" href="CV_ThierryHOR.pdf" title="My CV in PDF format" target="_blank">CV <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></em></p>
+                </div>
+               
             </div>
         </div>
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>Experience</h3>
-              <div class="table-responsive">
-                <table class="animTable">
-                    <tr>
-                        <th>2016</th>
-                        <th class="hidden-xs">
-                         Web Developer 
-                        </th>
-                        <td class="hidden-xs">
-                         <img src="images/resolving.png" alt="Resolving">
-                        </td>
-                        <td>
-                            PDF and Excel files creation by taking information from a database using PHP libraries for <strong><a class="link" target="_blank" href="http://resolving.com">Resolving</a></strong>. 
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>2014</th>
-                        <th class="hidden-xs">
-                         Web Developer PHP 
-                        </th>
-                        <td class="hidden-xs">
-                            <img src="images/starfleetGroup.jpg" alt="Starfleet Group">
-                        </td>
-                        <td>
-                            Development of the Japanese website <a class="link" target="_blank" href="https://www.ecofa.jp"><em>Ecofa</em></a> which is a e-commerce of recycled products for <strong><a class="link" target="_blank" href="http://www.starfleet.co.jp">Starfleet Group</a></strong>. 
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>2013</th>
-                        <th class="hidden-xs">
-                         Data Operators Manager 
-                        </th>
-                        <td class="hidden-xs">
-                            <img src="images/aitySolutions.jpg" alt="Aity Solutions">
-                        </td>
-                        <td>
-                            Involved in the writing of the online guide <a class="link" target="_blank" href="http://www.overcambodia.com/en"><em>Overcambodia</em></a> for <strong><a class="link" target="_blank" href="http://aitysolutions.com">Aity Solutions</a></strong>. 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="cvText">For more information, check out my <em><a href="ThierryCV.pdf" title="My CV in PDF format" download="Thierry's CV - Full-Stack Web Developer.pdf">CV <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></em>
-                        </td>
-                    </tr>
-                </table>
+
+        <div class="div20"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-3">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="tab" data-toggle="tab" href="#home">Experiences</a></li>
+                    <li><a class="tab" data-toggle="tab" href="#menu1">Education</a></li>
+                    <li><a class="tab" data-toggle="tab" href="#menu2">Interests</a></li>
+                  </ul>
+                </div>
+            </div>
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <h3 class="title2">Experiences</h3>
+                  <div class="table-responsive">
+                    <table class="animTable">
+                        <tr>
+                            <th>2016</th>
+                            <th class="hidden-xs">
+                             Web Developer 
+                            </th>
+                            <td class="hidden-xs">
+                             <a class="link" target="_blank" href="http://resolving.com">
+                                <img src="images/resolving.png" alt="Resolving">
+                             </a>
+                            </td>
+                            <td>
+                                PDF and Excel files creation by taking information from a database using PHP libraries for <strong><a class="link" target="_blank" href="http://resolving.com">Resolving</a></strong>. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th class="hidden-xs">
+                             Web Developer PHP 
+                            </th>
+                            <td class="hidden-xs">
+                                <a class="link" target="_blank" href="https://www.ecofa.jp">
+                                    <img src="images/starfleetGroup.jpg" alt="Starfleet Group">
+                                </a>
+                            </td>
+                            <td>
+                                Development of the Japanese website <a class="link" target="_blank" href="https://www.ecofa.jp"><em>Ecofa</em></a> which is a e-commerce of recycled products for <strong><a class="link" target="_blank" href="http://www.starfleet.co.jp">Starfleet Group</a></strong>. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2013</th>
+                            <th class="hidden-xs">
+                             Data Operators Manager 
+                            </th>
+                            <td class="hidden-xs">
+                                <a class="link" target="_blank" href="http://aitysolutions.com">
+                                    <img src="images/aitySolutions.jpg" alt="Aity Solutions">
+                                </a>
+                            </td>
+                            <td>
+                                Involved in the writing of the online guide <a class="link" target="_blank" href="http://www.overcambodia.com/en"><em>Overcambodia</em></a> for <strong><a class="link" target="_blank" href="http://aitysolutions.com">Aity Solutions</a></strong>. 
+                            </td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <h3 class="title2">Education</h3>
+                  <div class="table-responsive">
+                      <table>
+                        <tr>
+                            <th>2016</th>
+                            <th>It Akademy</th>
+                            <td>Web and Mobile Apps Developer</td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th>Setec Institute</th>
+                            <td>
+                                Bachelor's Degree of Management Information System
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2014</th>
+                            <th>University of Cambodia</th>
+                            <td>
+                                Bachelor's Degree of English Literature 
+                            </td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <h3 class="title2">Interests</h3>
+                  <ul>
+                    <li><span class="textList">Martial Arts</span></li>
+                    Martial arts tought me discipline and a sense of competition among others.
+                    <ul>
+                        <li><span class="textList">Kung-Fu Wushu</span>
+                            <br>
+                            <img src="images/blueBelt.png" alt="Blue belt">
+                            <ul>
+                                <li>
+                                    <span class="textList">3rd in the French Cup in 2004</span>
+                                </li>
+                                <a href="images/medals.jpg"><img class="medals" src="images/medals.jpg" alt="Two Medals"></a>
+                            </ul>
+                        </li>
+                            
+                        <li><span class="textList">Taekwondo</span>
+                            <br>
+                            <img src="images/blueBelt.png" alt="Blue belt">
+                        </li>
+                    </ul>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-              <h3>Education</h3>
-              <div class="table-responsive">
-                  <table>
-                    <tr>
-                        <th class="dateCol">Sept 2016</th>
-                        <th>Ip Formation</th>
-                        <td>Pursuing my education for a Master's Degree in Web Development, I'm looking for a company to work for a professional contract.</td>
-                    </tr>
-                    <tr>
-                        <th>2016</th>
-                        <th>It Akademy</th>
-                        <td>Web and Mobile Apps Developer</td>
-                    </tr>
-                    <tr>
-                        <th>2014</th>
-                        <th>Setec Institute</th>
-                        <td>
-                            Bachelor's Degree of Management Information System
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>2014</th>
-                        <th>University of Cambodia</th>
-                        <td>
-                            Bachelor's Degree of English Literature 
-                        </td>
-                    </tr>
-                  </table>
-              </div>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3>Interests</h3>
-              <ul>
-                <li><span class="textList">Martial Arts</span></li>
-                Martial arts tought me discipline and a sense of competition among others.
-                <ul>
-                    <li><span class="textList">Kung-Fu Wushu</span>
-                        <br>
-                        <img src="images/blueBelt.png" alt="Blue belt">
-                        <ul>
-                            <li>
-                                <span class="textList">3rd in the French Cup in 2004</span>
-                            </li>
-                            <img class="medals" src="images/medals.jpg" alt="Two Medals">
-                        </ul>
-                    </li>
-                        
-                    <li><span class="textList">Taekwondo</span>
-                        <br>
-                        <img src="images/blueBelt.png" alt="Blue belt">
-                    </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-    </div>
+        </div>
+        <div class="div20"></div>
     </section>
 
     <footer>

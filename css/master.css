@@ -9,11 +9,11 @@ html, body
 
 body
 {
-    background-color: #f9c667;
-    font-family: 'Quattrocento Sans', cursive;
+    background-image: url("../images/weather2.png");
+    font-family: 'Exo', cursive;
     font-size: 2em;
     padding-top: 70px;
-    color: #444;
+    color: white;
 }
 
 section
@@ -42,6 +42,7 @@ footer
 {
     margin-top: 15px;
     font-size: 0.7em;
+    color: black;
 }
 
 .socialCol
@@ -57,6 +58,12 @@ nav, .title
 .title
 {
     margin: 5px auto;
+    color: gold;
+}
+
+.title2
+{
+    color: gold;
 }
 
 .brandName
@@ -68,13 +75,14 @@ nav, .title
 {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+
 }
 
 .flag1, .flag
 {
-    width: 20px;
-    margin-right: 10px;
-    margin-left: 20px;
+    width: 22px;
+    height: 20px;
+    margin-top: -5px;
 }
 
 .div-7
@@ -102,19 +110,47 @@ nav, .title
     color: darkorange;
 }
 
-#navbarBg
+#active
 {
-    background-color: red;
+    background-color: #3BB9FF;
+    color: white
 }
 
-button .barColor
+#navbarBg
 {
-    background-color: white !important;
+    background-color: #3BB9FF;
+}
+
+#menu
+{
+    text-align: center;
+}
+
+#menu a:hover
+{
+    background-color: #3BB9FF;
+    color: white;
 }
 
 .navBottom
 {
     font-size: 1em;
+}
+
+.textLang
+{
+    margin-left: 100px;
+    text-decoration: underline;
+}
+
+.div20
+{
+    height: 20px;
+}
+
+.smile
+{
+    color: #3BB9FF;
 }
 
 .title

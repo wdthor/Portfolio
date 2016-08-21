@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CExo">
 
     <link rel="stylesheet" href="../css/master.css">
 
@@ -53,6 +53,11 @@
         font-size: 1.2em;
     }
 
+    .text1, .text2, .text3
+    {
+        color: #3BB9FF;
+    }
+
     .text3
     {
         -moz-animation:animImg 3s linear;
@@ -72,23 +77,24 @@
             <div class="navbar-header">
               <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="barColor icon-bar"></span>
-                <span class="barColor icon-bar"></span>
-                <span class="barColor icon-bar"></span>
+                Menu
               </button>
               <a class="navbar-brand brandName" href="index.html">Thierry</a>
             </div>
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Acceuil</a></li>
+                    <li class="active"><a id="active" href="index.html">Acceuil</a></li>
                     <li><a href="skills.html">Compétences</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">Qui Suis-Je</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"></a>
-                    <div class="div-7"></div>
-                    <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"></a>
+                    <li>
+                        <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"><span class="hidden-sm hidden-md hidden-lg"> Français</span></a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"> <span class="hidden-sm hidden-md hidden-lg"> English</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -98,27 +104,27 @@
         <div class="container-fluid">
             <div class="row titleBorder">
                 <div class="col-sm-offset-1 col-xs-11">
-                    <h2 class="title">Créez des sites web au TOP !</h2>
+                    <h2 class="title">Créez des sites web au TOP!</h2>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <h1 class="textCenter">Thierry HOR</h1>
-                <h2 class="textCenter">Développeur Web Full-Stack Trilingue</h2>
+                <h1 class="textCenter title2"><strong>Thierry HOR</strong></h1>
+                <h2 class="textCenter title2"><strong>Développeur Web Full-Stack</strong> Trilingue</h2>
 
                 <div class="col-sm-offset-1 col-xs-11">
-                    <p class="text">Créer des sites web qui sont:</p>
+                    <p class="text">Créez des sites web qui sont:</p>
                     <p class="text1 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> A jour</p>
                     <p class="text2 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> Responsive <i class="fa fa-mobile" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-desktop" aria-hidden="true"></i></p>
-                    <p class="text3 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> Et bien sûr au TOP !</p>
+                    <p class="text3 text-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i> Et bien sûr au TOP!</p>
                     <img src="../images/portfolioIphone.png" alt="Portfolio on Smartphone" class="portfolioIphone hidden-xs hidden-sm">
                     <img src="../images/portfolioTablet.png" alt="Portfolio on Tablet" class="portfolioTablet hidden-xs hidden-sm">
                 </div>
             </div>
         </div>
-        
         <div class="hidden-xs hiddenDiv"></div>
+        <div class="div20"></div>
     </section>
 
     <footer>
@@ -129,8 +135,8 @@
                 </div>
                 <div class="col-xs-6 socialCol">
                     <ul class="list-inline copyright">
-                        <li><a href="http://fr.linkedin.com/in/horthierry" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor/fr" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/horthierry/fr/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.viadeo.com/fr/profile/thierry.hor/fr" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
                         <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
                     </ul>
                 </div>

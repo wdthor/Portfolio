@@ -14,21 +14,27 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CExo">
 
     <link rel="stylesheet" href="../css/master.css">
     
     <style>
 
-    button .barColor
-    {
-        background-color: white !important;
-    }
-    
     .profileContainer
     {
-        background-color: #F8F8F8;
+        background-color: #3BB9FF;
         margin: 25px 0;
+        color:white;
+    }
+
+    .cv
+    {
+        color: blue;
+    }
+
+    .tab
+    {
+        color: #3BB9FF;
     }
     
     #profile
@@ -59,7 +65,7 @@
     {
         border-top: 2px solid white;
         border-bottom: 2px solid white;
-        background-color: #e8b556;
+        background-color: #3BB9FF;
     }
     
     th, td
@@ -80,12 +86,12 @@
     
     .link:link
     {
-        color: #447;
+        color: lime;
     }
     
     .link:visited
     {
-        color: #447;
+        color: lime;
     }
     
     ul li img
@@ -110,7 +116,7 @@
     
     .textList
     {
-        color: black;
+        color: white;
     }
 
     .animTable
@@ -132,9 +138,7 @@
             <div class="navbar-header">
                 <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
+                    Menu
                 </button>
                 <a class="navbar-brand brandName" href="index.html">Thierry</a>
             </div>
@@ -144,11 +148,14 @@
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="skills.html">Compétences</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="active"><a href="about.html">Qui Suis-Je</a></li>
+                    <li class="active"><a id="active" href="about.html">Qui Suis-Je</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"></a>
-                    <div class="div-7"></div>
-                    <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"></a>
+                    <li>
+                        <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"><span class="hidden-sm hidden-md hidden-lg"> Français</span></a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"> <span class="hidden-sm hidden-md hidden-lg"> English</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -165,16 +172,18 @@
 
         <div class="container-fluid profileContainer">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-9 profileIntro">
-                    <p>Développeur Web Full-Stack depuis plus d'un an, J'aime bien apprendre de nouvelle choses et me dépasser constamment.</p>
-                    <p>On dit souvent de moi que je suis ponctuel et volontaire.</p>
-                </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-sm-push-10">
                     <figure>
                             <img class="img-circle" id="profile" src="../images/photo2.jpg" alt="Thierry HOR">
                             <figcaption class="profileCaption">Thierry HOR</figcaption>
                     </figure>
                 </div>
+                <div class="col-sm-offset-1 col-sm-pull-2 col-sm-9 profileIntro">
+                    <p>Développeur Web Full-Stack depuis plus d'un an, j'aime bien apprendre de nouvelle choses et me dépasser constamment.</p>
+                    <p>Je recherche actuellement une entreprise pour un contrat de professionnalisation afin de continuer à me former dans le développement web (Bac+4).</p>
+                    <p>Pour plus d'information, voici mon <em><a class="cv" href="CV_ThierryHor_fr.pdf" title="Mon CV au format PDF" target="_blank">CV <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></em></p>
+                </div>
+                
             </div>
         </div>
 
@@ -184,15 +193,15 @@
             <div class="row">
                 <div class="col-sm-12 col-xs-3">
                   <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Expérience</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Formation</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Centres d'Intéret</a></li>
+                    <li class="active"><a class="tab" data-toggle="tab" href="#home">Expériences</a></li>
+                    <li><a class="tab" data-toggle="tab" href="#menu1">Formation</a></li>
+                    <li><a class="tab" data-toggle="tab" href="#menu2">Centres d'Intéret</a></li>
                   </ul>
                 </div>
             </div>
               <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                  <h3>Expériences professionnelles</h3>
+                  <h3 class="title2">Expériences professionnelles</h3>
                   <div class="table-responsive">
                     <table class="animTable">
                         <tr>
@@ -201,7 +210,9 @@
                              Développeur Web 
                             </th>
                             <td class="hidden-xs">
-                             <img src="../images/resolving.png" alt="Resolving">
+                                <a target="_blank" href="http://resolving.com/Fr/">
+                                    <img src="../images/resolving.png" alt="Resolving">
+                                </a>
                             </td>
                             <td>
                                 Création de pages PDF et Excel en prenant des informations sur une base de données en utilisant des librairies PHP pour la société <strong><a class="link" target="_blank" href="http://resolving.com/Fr/">Resolving</a></strong>. 
@@ -213,7 +224,9 @@
                              Développeur Web PHP 
                             </th>
                             <td class="hidden-xs">
-                                <img src="../images/starfleetGroup.jpg" alt="Starfleet Group">
+                                <a target="_blank" href="https://www.ecofa.jp">
+                                    <img src="../images/starfleetGroup.jpg" alt="Starfleet Group">
+                                </a>
                             </td>
                             <td>
                                 Maintenance et développement du site internet Japonais <a class="link" target="_blank" href="https://www.ecofa.jp"><em>Ecofa</em></a> qui est une plateforme web de distribution de produits recyclés pour la société <strong><a class="link" target="_blank" href="http://www.starfleet.co.jp">Starfleet Group</a></strong>. 
@@ -222,31 +235,25 @@
                         <tr>
                             <th>2013</th>
                             <th class="hidden-xs">
-                             Manage d'Opérateurs de Saisie 
+                             Manager d'Opérateurs de Saisie 
                             </th>
                             <td class="hidden-xs">
-                                <img src="../images/aitySolutions.jpg" alt="Aity Solutions">
+                                <a target="_blank" href="http://aitysolutions.com">
+                                    <img src="../images/aitySolutions.jpg" alt="Aity Solutions">
+                                </a>
                             </td>
                             <td>
                                 Participation à l'écriture du guide touristique <a class="link" target="_blank" href="http://www.overcambodia.com/en"><em>Overcambodia</em></a> pour la société <strong><a class="link" target="_blank" href="http://aitysolutions.com">Aity Solutions</a></strong>.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4" class="cvText">Pour plus d'information, voici mon <em><a href="ThierryCVfr.pdf" title="Mon CV au format PDF" download="CV Thierry HOR - Développeur Web Full-Stack Trilingue.pdf">CV <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></em>
                             </td>
                         </tr>
                     </table>
                   </div>
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                  <h3>Education</h3>
+                  <h3 class="title2">Education</h3>
                   <div class="table-responsive">
                       <table>
-                        <tr>
-                            <th class="dateCol">Sept 2016</th>
-                            <th>Ip Formation</th>
-                            <td>Je recherche actuellement une entreprise pour un contrat de professionnalisation afin de continuer à me former dans le développement web (Bac+4).</td>
-                        </tr>
+                        
                         <tr>
                             <th>2016</th>
                             <th>It Akademy</th>
@@ -270,7 +277,7 @@
                   </div>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                  <h3>Centres d'Intéret</h3>
+                  <h3 class="title2">Centres d'Intéret</h3>
                   <ul>
                     <li><span class="textList">Arts Martiaux</span></li>
                     Les arts martiaux m'ont appris la discipline et le sens de la compétition entre autres.
@@ -295,6 +302,7 @@
                 </div>
               </div>
         </div>
+        <div class="div20"></div>
     </section>
 
     <footer>
@@ -305,8 +313,8 @@
                 </div>
                 <div class="col-xs-6 socialCol">
                     <ul class="list-inline copyright">
-                        <li><a href="http://fr.linkedin.com/in/horthierry/fr" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://fr.linkedin.com/in/horthierry/fr/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
                         <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
                     </ul>
                 </div>

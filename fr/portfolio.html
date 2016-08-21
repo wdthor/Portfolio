@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CExo">
 
     <link rel="stylesheet" href="../css/master.css">
 
@@ -27,18 +27,25 @@
         max-width: 100%;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 0.9;
         transition-property: opacity;
         transition-duration: 250ms;
     }
 
     .imgKwoon:hover, .imgTribute:hover
     {
-        opacity: 0.8;
+        opacity: 1;
     }
 
     .comingSoonPad
     {
         padding:25% 0;
+    }
+
+    .comingSoonPad a
+    {
+        text-decoration: none;
+        color: white;
     }
 
     .comingSoon
@@ -64,6 +71,7 @@
     .modalBgColor
     {
         background-color:Azure;
+        color: black;
     }
 
     .clearStyle
@@ -81,9 +89,7 @@
             <div class="navbar-header">
                 <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
+                    Menu
                 </button>
                 <a class="navbar-brand brandName" href="index.html">Thierry</a>
             </div>
@@ -92,12 +98,15 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="skills.html">Compétences</a></li>
-                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a id="active" href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">Qui Suis-Je</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"></a>
-                    <div class="div-7"></div>
-                    <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"></a>
+                    <li>
+                        <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"><span class="hidden-sm hidden-md hidden-lg"> Français</span></a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"> <span class="hidden-sm hidden-md hidden-lg"> English</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -113,7 +122,7 @@
         </div>
 
         <div class="container"> 
-            <h3><strong>Site Web Responsives & Projects Personnels</strong></h3>       
+            <h3 class="title2"><strong>Sites Web Responsives & Projets Personnels</strong></h3>       
         </div>
 
         <div class="container-fluid">
@@ -135,7 +144,7 @@
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <div class="comingSoonPad">
-                        <h3 class="comingSoon">A Venir <br>Peut-être vous?</h3>              
+                        <a href="contact.html"><h3 class="comingSoon">A Venir <br>Peut-être votre projet?</h3></a>              
                     </div>
                 </div>
                 <div class="clearfix visible-lg-block visible-md-block"></div>
@@ -222,8 +231,8 @@
                 </div>
                 <div class="col-xs-6 socialCol">
                     <ul class="list-inline copyright">
-                        <li><a href="http://fr.linkedin.com/in/horthierry/fr" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                        <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                        <li><a href="https://fr.linkedin.com/in/horthierry/fr/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
                         <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
                     </ul>
                 </div>

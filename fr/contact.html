@@ -2,19 +2,19 @@
 
 <html lang="fr">
 <head>
-    <title>Recruter moi ou laisser un message</title>
+    <title>Recrutez moi ou laissez un message</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Développeur Web Full-Stack disponible immédiatement sur Lyon, recruter moi ou laisser un message.">
+    <meta name="description" content="Développeur Web Full-Stack disponible immédiatement sur Lyon, recrutez moi ou laissez un message.">
     <meta name="keywords" content="Développeur Web Full-Stack, recruter moi, disponible, Lyon">
     <meta name="author" content="Thierry HOR">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CQuattrocento+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CExo">
 
     <link rel="stylesheet" href="../css/master.css">
 
@@ -41,9 +41,7 @@
             <div class="navbar-header">
                 <button type="button" id="navbarBg" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
-                    <span class="barColor icon-bar"></span>
+                    Menu
                 </button>
                 <a class="navbar-brand brandName" href="index.html">Thierry</a>
             </div>
@@ -54,57 +52,62 @@
                     <li><a href="skills.html">Compétences</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">Qui Suis-Je</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                    <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"></a>
-                    <div class="div-7"></div>
-                    <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"></a>
+                    <li class="active"><a id="active" href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="index.html"><img class="flag" alt="Drapeau Français" src="../images/FrFlag.png"><span class="hidden-sm hidden-md hidden-lg"> Français</span></a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img class="flag1" alt="Drapeau Anglais" src="../images/EngFlag.png"> <span class="hidden-sm hidden-md hidden-lg"> English</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section>
-    <div class="container-fluid">
-        <div class="row titleBorder">
-            <div class="col-sm-offset-1 col-xs-11">
-                <h2 class="title">Contact</h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-            <p><i class="fa fa-thumbs-up thumbs" aria-hidden="true"></i> Mes compétences vous intéressent?</p>
-            <p>Disponible immédiatement sur Lyon.</p>
-            <p>Contacter moi si vous voulez me recruter ou juste laisser un message.</p>
+        <div class="container-fluid">
+            <div class="row titleBorder">
+                <div class="col-sm-offset-1 col-xs-11">
+                    <h2 class="title">Contact</h2>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6">
-                <form method="POST" action="contact.php">
-                    <div class="form-group input-group">
-                        <label class="input-group-addon btn-info iconPad" for="name">
-                            <i class="fa fa-user"></i>
-                        </label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Nom" required>
-                    </div>
-                        
-                    <div class="form-group input-group">
-                        <label class="input-group-addon btn-info" for="email">
-                            <i class="fa fa-envelope"></i>
-                        </label>
-                        <input type="email" class="form-control" name="mail" id="email" placeholder="Email" required>
-                    </div>
-                        
-                <textarea class="form-group form-control" name="message" rows="4" placeholder="Votre message" required></textarea>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-11">
+                <p><i class="smile fa fa-smile-o" aria-hidden="true"></i> Merci pour votre visite. <i class="smile fa fa-smile-o" aria-hidden="true"></i></p>
+                <p><i class="fa fa-thumbs-up thumbs" aria-hidden="true"></i> Mes compétences vous intéressent?</p>
+                <p>Disponible immédiatement sur Lyon.</p>
+                <p>Contactez moi si vous voulez me recruter ou juste laisser un message.</p>
+                </div>
+            </div>
 
-                <input class="btn btn-primary btn-block text-uppercase" type="submit" value="Envoyer">
-                </form>
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <form method="POST" action="../contact.php">
+                        <div class="form-group input-group">
+                            <label class="input-group-addon btn-info iconPad" for="name">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nom" required>
+                        </div>
+                            
+                        <div class="form-group input-group">
+                            <label class="input-group-addon btn-info" for="email">
+                                <i class="fa fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control" name="mail" id="email" placeholder="Email" required>
+                        </div>
+                            
+                    <textarea class="form-group form-control" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+                    <input class="btn btn-primary btn-block text-uppercase" type="submit" value="Envoyer">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="div20"></div>
     </section>
 
     <footer>
@@ -115,8 +118,8 @@
             </div>
             <div class="col-xs-6 socialCol">
                 <ul class="list-inline copyright">
-                    <li><a href="http://fr.linkedin.com/in/horthierry/fr" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                    <li><a href="http://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
+                    <li><a href="https://fr.linkedin.com/in/horthierry/fr/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                    <li><a href="https://www.viadeo.com/fr/profile/thierry.hor" target="_blank"><i id="viadeo" class="fa fa-2x fa-viadeo-square"></i></a></li>
                     <li><a href="https://github.com/webdevthierry" target="_blank"><i id="github" class="fa fa-2x fa-github-square"></i></a></li>
                 </ul>
             </div>
