@@ -21,7 +21,7 @@
 
     <style>
 
-    .imgKwoon, .imgTribute, .imgKwoon2, .imgTribute2
+    .imgProjects, .imgModals
     {
         max-height: 300px;
         max-width: 100%;
@@ -32,7 +32,7 @@
         transition-duration: 250ms;
     }
 
-    .imgKwoon:hover, .imgTribute:hover
+    .imgProjects:hover
     {
         opacity: 1;
     }
@@ -129,25 +129,32 @@
             <div class="row">           
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <figure>
-                        <img class="imgKwoon img-thumbnail" src="../images/kwoonIntegration.png" alt="Front-End Project" data-toggle="modal" data-target="#project1" data-backdrop="true">
+                        <img class="imgProjects img-thumbnail" src="../images/kwoonIntegration.png" alt="Front-End Project" data-toggle="modal" data-target="#project1" data-backdrop="true">
                         <figcaption><strong>Projet Intégration</strong></figcaption>
                     </figure>
                 </div>
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <figure>
-                        <img class="imgTribute img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page" data-toggle="modal" data-target="#project2" data-backdrop="true">
-                        <figcaption><strong>Page d'Hommage</strong></figcaption>
+                        <img class="imgProjects img-thumbnail" src="../images/colorGame.jpg" alt="Jeux de couleurs" data-toggle="modal" data-target="#project2" data-backdrop="true">
+                        <figcaption><strong>Jeux de Couleurs</strong></figcaption>
                     </figure>
                 </div>
                 <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-md-4 col-sm-6 colPortfolio text-center">
+                    <figure>
+                        <img class="imgProjects img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page" data-toggle="modal" data-target="#project3" data-backdrop="true">
+                        <figcaption><strong>Page d'Hommage</strong></figcaption>
+                    </figure>
+                </div>
+                <div class="clearfix visible-lg-block visible-md-block"></div>
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <div class="comingSoonPad">
                         <a href="contact.html"><h3 class="comingSoon">A Venir <br>Peut-être votre projet?</h3></a>              
                     </div>
                 </div>
-                <div class="clearfix visible-lg-block visible-md-block"></div>
             </div>      
         </div>
 
@@ -165,7 +172,7 @@
                     <div class="col-md-4">
                       <figure>
                             <a href="https://github.com/webdevthierry/Projet-Integration" title="Code source du projet" target="_blank">
-                                <img class="imgKwoon2 img-thumbnail" src="../images/kwoonIntegration.png" alt="Front-End Project">
+                                <img class="imgModals img-thumbnail" src="../images/kwoonIntegration.png" alt="Front-End Project">
                             </a>
                             <figcaption>
                                 <strong>Cliquez sur l'image pour voir le code source</strong>
@@ -196,13 +203,47 @@
               <div class="modal-content modalBgColor">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><strong>Jeux de Couleurs</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="https://codepen.io/webdevthierry/full/GjJKaO" title="Jouer au jeux de couleurs" target="_blank">
+                                <img class="imgModals img-thumbnail" src="../images/colorGame.jpg" alt="Jeux de couleurs">
+                            </a>
+                            <figcaption>
+                                <strong>Cliquez sur l'image pour jouer au jeux</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>Ce jeux de couleurs vous aide à apprendre le système de couleurs RGB
+                        <br> Utilisation de Html5, Css3 & JavaScript</p>
+                    </div>
+                </div>
+                <div class="modal-footer clearStyle">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Modal3 -->
+        <div class="modal fade" id="project3" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content modalBgColor">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title"><strong>Page d'Hommage</strong></h4>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-4">
                         <figure>
                             <a href="https://codepen.io/webdevthierry/full/mPWMEr" title="Page d'hommage sur Codepen" target="_blank">
-                                <img class="imgTribute2 img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page">
+                                <img class="imgModals img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page">
                             </a>
                             <figcaption>
                                 <strong>Cliquez sur l'image pour voir le codepen</strong>

@@ -40,13 +40,28 @@
       animation-duration: 3s;
     }
 
-    @keyframes spin
+    @-moz-keyframes spin
     {
       from { transform: rotateY(0deg); }
       to { transform: rotateY(-360deg); }
     }
 
-    @keyframes depth
+    @-moz-keyframes depth
+    {
+      0% { text-shadow: 0 0 black; }
+      25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+      50% { text-shadow: 0 0 black; }
+      75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+      100% { text-shadow: 0 0 black; }
+    }
+
+    @-webkit-keyframes spin
+    {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(-360deg); }
+    }
+
+    @-webkit-keyframes depth
     {
       0% { text-shadow: 0 0 black; }
       25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
