@@ -27,9 +27,13 @@
         max-width: 100%;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        opacity: 0.9;
         transition-property: opacity;
         transition-duration: 250ms;
+    }
+
+    .imgProjects
+    {
+        opacity: 0.8;
     }
 
     .imgProjects:hover
@@ -136,19 +140,26 @@
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <figure>
-                        <img class="imgProjects img-thumbnail" src="../images/colorGame.jpg" alt="Jeux de couleurs" data-toggle="modal" data-target="#project2" data-backdrop="true">
-                        <figcaption><strong>Jeux de Couleurs</strong></figcaption>
+                        <img class="imgProjects img-thumbnail" src="../images/todoList.jpg" alt="Todo List" data-toggle="modal" data-target="#project2" data-backdrop="true">
+                        <figcaption><strong>Todo List</strong></figcaption>
                     </figure>
                 </div>
                 <div class="clearfix visible-sm-block"></div>
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <figure>
-                        <img class="imgProjects img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page" data-toggle="modal" data-target="#project3" data-backdrop="true">
-                        <figcaption><strong>Page d'Hommage</strong></figcaption>
+                        <img class="imgProjects img-thumbnail" src="../images/colorGame.jpg" alt="Jeux de couleurs" data-toggle="modal" data-target="#project3" data-backdrop="true">
+                        <figcaption><strong>Jeux de couleurs</strong></figcaption>
                     </figure>
                 </div>
                 <div class="clearfix visible-lg-block visible-md-block"></div>
+
+                <div class="col-md-4 col-sm-6 colPortfolio text-center">
+                    <figure>
+                        <img class="imgProjects img-thumbnail" src="../images/tributePage.jpg" alt="Tribute Page" data-toggle="modal" data-target="#project4" data-backdrop="true">
+                        <figcaption><strong>Page d'Hommage</strong></figcaption>
+                    </figure>
+                </div>
 
                 <div class="col-md-4 col-sm-6 colPortfolio text-center">
                     <div class="comingSoonPad">
@@ -203,6 +214,40 @@
               <div class="modal-content modalBgColor">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><strong>Todo List</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="https://codepen.io/webdevthierry/full/EgKBOq" title="Essayer la Todo List" target="_blank">
+                                <img class="imgModals img-thumbnail" src="../images/todoList.jpg" alt="Todo List">
+                            </a>
+                            <figcaption>
+                                <strong>Cliquez sur l'image pour essayer la todo list</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>Une simple todo list
+                        <br> Utilisation de Html5, Css3 & jQuery</p>
+                    </div>
+                </div>
+                <div class="modal-footer clearStyle">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+         <!-- Modal3 -->
+        <div class="modal fade" id="project3" role="dialog">
+            <div class="modal-dialog modal-lg">
+            
+              <!-- Modal content-->
+              <div class="modal-content modalBgColor">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title"><strong>Jeux de Couleurs</strong></h4>
                 </div>
                 <div class="modal-body">
@@ -229,8 +274,8 @@
             </div>
         </div>
 
-        <!-- Modal3 -->
-        <div class="modal fade" id="project3" role="dialog">
+        <!-- Modal4 -->
+        <div class="modal fade" id="project4" role="dialog">
             <div class="modal-dialog modal-lg">
             
               <!-- Modal content-->
